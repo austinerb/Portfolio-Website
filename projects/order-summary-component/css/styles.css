@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300,700;0,900;1,500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  color: hsl(223, 47%, 23%);
+  padding-top: 65px;
+}
+
+/* summary card */
+
+.summary-card {
+  width: 450px;
+  margin: 0 auto 20px;
+  border-radius: 15px;
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.summary-card > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+/* description */
+
+.summary-card .summary-description {
+  text-align: center;
+  padding: 38px 45px 0;
+  margin-bottom: 18px;
+}
+
+.summary-card .summary-description h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 19px;
+}
+
+.summary-card .summary-description p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #888;
+}
+
+/* summary card plan */
+
+.summary-card .plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  width: 370px;
+  margin: 0 auto 30px;
+  padding: 26px 20px 18px;
+}
+
+.summary-card .plan .music-icon-col {
+  float: left;
+  width: 65px;
+}
+
+.summary-card .plan .plan-col {
+  float: left;
+  width: 202px;
+}
+
+.summary-card .plan .plan-col #annual {
+  font-weight: 700;
+  margin: 4px 0 6px;
+}
+
+.summary-card .plan .plan-col #cost {
+  color: #888;
+}
+
+.summary-card .plan .change-col {
+  float: left;
+  width: 20px;
+  padding-top: 14px;
+}
+
+.summary-card .plan .change-col a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+
+.summary-card .plan .change-col a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.summary-card .plan::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* payment */
+
+.payment {
+  text-decoration: none;
+}
+
+.payment div {
+  color: white;
+  width: 370px;
+  margin: 0 auto 30px;
+  text-align: center;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0px 20px 20px 10px rgba(0,0,0,0.1);
+}
+
+.payment div:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+/* cancel */
+
+.cancel {
+  text-decoration: none;
+}
+
+.cancel div {
+  width: 370px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel div:hover {
+  color: black;
+}
+
+/* attribution */
+
+.attribution {
+}
+
+/* media queries */
+
+/* mobile */
+@media (max-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+
+  /* summary card */
+
+  .summary-card {
+    width: 330px;
+    padding-bottom: 31px;
+  }
+
+  /* description */
+
+  .summary-card .summary-description {
+    padding: 30px 35px 0;
+  }
+
+  .summary-card .summary-description h1 {
+    font-size: 22px;
+  }
+
+  /* summary card plan */
+
+  .summary-card .plan {
+    width: 285px;
+    margin: 0 auto 25px;
+    padding: 26px 20px 18px;
+  }
+
+  .summary-card .plan .music-icon-col {
+    width: 65px;
+  }
+
+  .summary-card .plan .plan-col {
+    width: 123px;
+  }
+
+  .summary-card .plan .change-col {
+    width: 20px;
+    padding-top: 14px;
+  }
+
+  /* payment */
+
+  .payment div {
+    width: 285px;
+  }
+
+  /* cancel */
+
+  .cancel div {
+    width: 285px;
+  }
+}

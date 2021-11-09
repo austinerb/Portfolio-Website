@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #6198EF;
+  padding-top: 50px;
+}
+
+/* nav */
+
+nav {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+}
+
+nav a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 10px 15px;
+  background-color: rgba(0,0,0,.1);
+}
+
+nav a:hover {
+  background-color: #fafafa;
+  color: #444;
+}
+
+/* heading */
+
+h1 {
+  margin: 0 auto 30px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background-color: #FAFAFA;
+  box-shadow: 6px 6px rgba(0,0,0,.25);
+  color: #444;
+  z-index: 5;
+  position: relative;
+}
+
+/* form */
+
+form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #444;
+  background-color: rgba(0,0,0,.1);
+  z-index: 5;
+  position: relative;
+}
+
+form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 20px;
+  border: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgba(0,0,0,.85);
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  outline: none;
+}
+
+form input[type="button"] {
+  padding: 20px 30px;
+  border: 0;
+  font-size: 20px;
+  float: right;
+  background-color: #FAFAFA;
+  /* box-shadow: 6px 6px rgba(0,0,0,.25); */
+  color: #444;
+}
+
+form input[type="button"]:hover {
+  background-color: #333;
+  color: #fafafa;
+}
+
+/* shapes */
+
+.circle {
+  background-color: #E4B363;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 70px;
+}
+
+.square {
+  background-color: #EF6161;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  z-index: 2;
+  left: 30%;
+  top: 240px;
+  transform: rotate(30deg);
+}
+
+.triangle {
+  height: 0;
+  width: 0;
+  border-left: 150px solid #5669AE;
+  border-right: 150px solid transparent;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  position: absolute;
+  z-index: 4;
+  left: 15%;
+  top: 100px;
+  transform: rotate(-10deg);
+}
+
+.rectangle {
+  background-color: #EFC761;
+  width: 400px;
+  height: 50px;
+  position: absolute;
+  z-index: 6;
+  left: 15%;
+  top: 600px;
+  transform: rotate(-20deg);
+}
