@@ -80,6 +80,7 @@ h1 {
 
 .project-item-info p {
   margin-bottom: 25px;
+  line-height: 25px;
 }
 
 .project-item-info a {

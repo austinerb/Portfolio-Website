@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #6198EF;
+  background-color: #EF6161;
   padding-top: 50px;
 }
 
@@ -47,62 +47,28 @@ h1 {
   position: relative;
 }
 
-/* notice */
+/* portrait */
 
-#notice {
+.img {
+  width: 300px;
+  margin: 0 auto 20px;
   position: relative;
-  z-index: 8;
-  color: #fefefe;
-  padding: 0 50px;
-  margin-bottom: 20px;
-}
-
-/* form */
-
-form {
-  width: 700px;
-  margin: 0 auto;
-  padding: 30px;
-  color: #444;
-  background-color: rgba(0,0,0,.1);
   z-index: 5;
-  position: relative;
 }
 
-form::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-form input[type="text"],
-form textarea {
+.img img {
   width: 100%;
-  padding: 20px;
-  border: 0;
+}
+
+/* info */
+
+p {
+  position: relative;
+  z-index: 6;
+  color: white;
+  padding: 0 30px;
   margin-bottom: 10px;
-  font-size: 20px;
-  color: rgba(0,0,0,.85);
-}
-
-form input[type="text"]:focus,
-form textarea:focus {
-  outline: none;
-}
-
-form input[type="button"] {
-  padding: 20px 30px;
-  border: 0;
-  font-size: 20px;
-  float: right;
-  background-color: #FAFAFA;
-  /* box-shadow: 6px 6px rgba(0,0,0,.25); */
-  color: #444;
-}
-
-form input[type="button"]:hover {
-  background-color: #333;
-  color: #fafafa;
+  text-align: center;
 }
 
 /* shapes */
@@ -110,23 +76,23 @@ form input[type="button"]:hover {
 .circle {
   background-color: #E4B363;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 70px;
+  top: 300px;
 }
 
 .square {
-  background-color: #EF6161;
-  width: 400px;
-  height: 400px;
+  background-color: #6198EF;
+  width: 300px;
+  height: 300px;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   left: 30%;
-  top: 240px;
-  transform: rotate(30deg);
+  top: 80px;
+  transform: rotate(70deg);
 }
 
 .triangle {
@@ -139,8 +105,8 @@ form input[type="button"]:hover {
   position: absolute;
   z-index: 4;
   left: 15%;
-  top: 100px;
-  transform: rotate(-10deg);
+  top: 400px;
+  transform: rotate(80deg);
 }
 
 .rectangle {
@@ -149,7 +115,7 @@ form input[type="button"]:hover {
   height: 50px;
   position: absolute;
   z-index: 6;
-  left: 15%;
-  top: 600px;
-  transform: rotate(-20deg);
+  left: 60%;
+  top: 200px;
+  transform: rotate(90deg);
 }
