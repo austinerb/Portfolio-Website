@@ -23,7 +23,7 @@
 .landing {
   background-color: #E4B363;
   text-align: center;
-  padding-top: calc(50vh - 170px);
+  padding-top: 150px;
   height: 100vh;
   font-size: 35px;
   color: #444;
@@ -115,4 +115,47 @@
 .links li a:hover {
   background-color: #fafafa;
   color: #444;
+}
+
+/* media queries */
+
+/* 320 - 480 */
+@media (max-width: 480px) {
+  .name-box {
+    width: 90%;
+  }
+
+  .name-box h1 {
+    font-size: 50px;
+  }
+
+  .name-box p {
+    font-size: 25px;
+  }
+
+  .circle {
+    left: 15%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .square {
+    left: 25%;
+  }
+
+  .rectangle {
+    left: -28%;
+  }
+}
+
+/* 481 - 768 */
+@media (min-width: 481px) and (max-width: 768px) {
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .square {
+    left: 25%;
+  }
 }
