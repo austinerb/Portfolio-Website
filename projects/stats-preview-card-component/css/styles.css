@@ -13,6 +13,7 @@ body {
   background-color: #090B1A;
   font-family: 'Lexend Deca', sans-serif;
   color: white;
+  padding-bottom: 20px;
 }
 
 /* content card */
@@ -85,6 +86,7 @@ body {
   width: 540px;
   height: 446px;
   float: left;
+  border-radius: 0 10px 10px 0;
 }
 
 .img-mobile {
@@ -101,10 +103,10 @@ body {
 
 /* media queries */
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
   /* content card  */
   .content-card {
-    width: 330px;
+    width: 95%;
     margin-top: 92px;
     height: auto;
   }

@@ -149,7 +149,7 @@ body {
 /* media queries */
 
 /* mobile */
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
   body {
     background-image: url("../images/pattern-background-mobile.svg");
   }
@@ -157,7 +157,7 @@ body {
   /* summary card */
 
   .summary-card {
-    width: 330px;
+    width: 95%;
     padding-bottom: 31px;
   }
 
