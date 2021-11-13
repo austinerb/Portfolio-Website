@@ -46,6 +46,7 @@ h1 {
   color: #444;
   z-index: 5;
   position: relative;
+  opacity: 0.9;
 }
 
 /* notice */
@@ -109,6 +110,12 @@ form input[type="button"]:hover {
 
 /* shapes */
 
+.shape-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .circle {
   background-color: #E4B363;
   border-radius: 50%;
@@ -118,6 +125,11 @@ form input[type="button"]:hover {
   z-index: 1;
   left: 50%;
   top: 70px;
+  opacity: .9;
+
+  animation-name: circle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .square {
@@ -129,6 +141,11 @@ form input[type="button"]:hover {
   left: 30%;
   top: 240px;
   transform: rotate(30deg);
+  opacity: .9;
+
+  animation-name: square;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 .triangle {
@@ -143,6 +160,11 @@ form input[type="button"]:hover {
   left: 15%;
   top: 100px;
   transform: rotate(-10deg);
+  opacity: .9;
+
+  animation-name: triangle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .rectangle {
@@ -154,6 +176,35 @@ form input[type="button"]:hover {
   left: 15%;
   top: 600px;
   transform: rotate(-20deg);
+  opacity: .9;
+
+  animation-name: rectangle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  50% {
+    top: 80px;
+  }
+}
+
+@keyframes square {
+  50% {
+    top: 250px;
+  }
+}
+
+@keyframes triangle {
+  50% {
+    top: 110px;
+  }
+}
+
+@keyframes rectangle {
+  50% {
+    top: 610px;
+  }
 }
 
 /* media queries */

@@ -46,6 +46,7 @@ h1 {
   color: #444;
   z-index: 5;
   position: relative;
+  opacity: 0.9;
 }
 
 /* portrait */
@@ -74,6 +75,12 @@ p {
 
 /* shapes */
 
+.shape-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .circle {
   background-color: #E4B363;
   border-radius: 50%;
@@ -83,6 +90,11 @@ p {
   z-index: 1;
   left: 50%;
   top: 300px;
+  opacity: .9;
+
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .square {
@@ -94,6 +106,11 @@ p {
   left: 30%;
   top: 80px;
   transform: rotate(70deg);
+  opacity: .9;
+
+  animation-name: square;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 .triangle {
@@ -108,6 +125,11 @@ p {
   left: 15%;
   top: 400px;
   transform: rotate(80deg);
+  opacity: .9;
+
+  animation-name: triangle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .rectangle {
@@ -119,6 +141,35 @@ p {
   left: 60%;
   top: 200px;
   transform: rotate(90deg);
+  opacity: .9;
+
+  animation-name: rectangle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  50% {
+    top: 310px;
+  }
+}
+
+@keyframes square {
+  50% {
+    top: 90px;
+  }
+}
+
+@keyframes triangle {
+  50% {
+    top: 410px;
+  }
+}
+
+@keyframes rectangle {
+  50% {
+    top: 210px;
+  }
 }
 
 /* media queries */
