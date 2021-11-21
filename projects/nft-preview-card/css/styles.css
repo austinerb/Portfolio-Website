@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #0D192C;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+
+/* card */
+
+.card {
+  width: 327px;
+  background: #15263F;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  padding: 24px;
+}
+
+/* nft */
+
+.nft-container {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.nft {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.view-icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 279px;
+  background: #00FFF8;
+  border-radius: 8px;
+  opacity: .5;
+  z-index: 5;
+
+  display: none;
+}
+
+.view-icon {
+  width: 44px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+
+  display: none;
+}
+
+/* nft hover */
+
+.nft-container:hover .view-icon-bg,
+.nft-container:hover .view-icon {
+  display: block;
+}
+
+/* content */
+
+h1 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 a:hover {
+  color: #00FFF8;
+}
+
+.content > p {
+  color: #8BACD9;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+/* info */
+
+.info {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2E405A;;
+}
+
+.price img,
+.price span {
+  vertical-align: middle;
+}
+
+.price span {
+  color: #00FFF8;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.time {
+  text-align: right;
+  color: #8BACD9;
+}
+
+.time img,
+.time span {
+  vertical-align: middle;
+}
+
+.time span {
+  font-size: 16px;
+  line-height: 20px;
+  color: #8BACD9;
+}
+
+/* author */
+
+.author {
+  display: grid;
+  grid-template: 1fr / 33px 1fr;
+  align-items: center;
+}
+
+.author img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.author p {
+  padding-left: 16px;
+  color: #8BACD9;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.author p a {
+  text-decoration: none;
+  color: white;
+}
+
+.author p a:hover {
+  color: #00FFF8;
+}
