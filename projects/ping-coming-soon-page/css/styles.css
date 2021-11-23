@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.content-container {
+  width: 100%;
+  padding-top: 81px;
+  text-align: center;
+  padding-bottom: 37px;
+}
+
+/* content */
+
+.content .logo {
+  width: 56px;
+  margin-bottom: 32px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 15px;
+  color: #969696;
+}
+
+h1 span {
+  font-weight: 700;
+  color: #15202A;
+}
+
+.content .sub {
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 32px;
+  color: #15202A;
+}
+
+form {
+  width: 282px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  border: 1px solid #C2D3FF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
+  border-radius: 28px;
+  padding: 0 32px;
+}
+
+form input:active,
+form input:focus,
+form input:hover,
+form input:target {
+  outline: none;
+}
+
+form input::placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: #B8C7ED;
+}
+
+form button {
+  width: 100%;
+  height: 40px;
+  background: #4C7BF3;
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+  border-radius: 28px;
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+/* error */
+
+.error-msg-mobile,
+.error-msg-desktop {
+  display: none;
+}
+
+.error {
+  margin-bottom: 40px;
+}
+
+.error input {
+  border-color: #FF5466;
+  margin-bottom: 2px;
+}
+
+.error .error-msg-mobile {
+  display: block;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.125px;
+  color: #FF5466;
+  margin-bottom: 20px;
+}
+
+.error .error-msg-desktop {
+  display: none;
+}
+
+/* illustration */
+
+.illustration {
+  width: 320px;
+  margin-bottom: 120px;
+}
+
+/* socials */
+
+.socials {
+  width: 120px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  place-items: center;
+  margin-bottom: 27px;
+}
+
+.socials div {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(76, 123, 243, 0.146498);
+  border-radius: 50%;
+  margin-right: 12px;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+}
+
+.socials div:hover {
+  background-color: #4C7BF3;
+}
+
+.socials .fa-facebook-f,
+.socials .fa-twitter,
+.socials .fa-instagram {
+  font-size: 15px;
+  color: #4C7BF3;
+}
+
+.socials div:hover .fa-facebook-f,
+.socials div:hover .fa-twitter,
+.socials div:hover .fa-instagram {
+  color: white;
+}
+
+.socials .fa-instagram {
+  margin-right: 0;
+}
+
+/* copy */
+
+.copy {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #969696;
+}
+
+/* desktop layout */
+
+@media (min-width: 1440px) {
+  .content-container {
+    padding-top: 80px;
+    padding-bottom: 49px;
+  }
+
+  .content .logo {
+    width: 90px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 16px;
+  }
+
+  .content .sub {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  form {
+    width: 641px;
+    margin-bottom: 94px;
+  }
+
+  form input {
+    width: 421px;
+    height: 56px;
+    padding: 0 30px;
+    margin-right: 16px;
+  }
+
+  form input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  form button {
+    width: 200px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  /* error */
+
+  .error {
+    margin-bottom: 68px;
+  }
+
+  .error input {
+    margin-bottom: 6px;
+  }
+
+  .error .error-msg-desktop {
+    display: block;
+    font-style: italic;
+    color: #FF5466;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+
+  }
+
+  .error .error-msg-mobile {
+    display: none;
+  }
+
+  /* illustration */
+
+  .illustration {
+    width: 640px;
+    margin-bottom: 72px;
+  }
+
+  /* socials */
+
+  .socials {
+    margin-bottom: 25px;
+  }
+
+  /* copy */
+
+  .copy {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
