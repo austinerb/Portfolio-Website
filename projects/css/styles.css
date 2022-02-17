@@ -105,117 +105,101 @@ h1 {
 .shape-container {
   position: fixed;
   width: 100%;
+  height: 100vh;
   top: 0;
+}
+
+.circle,
+.square,
+.triangle,
+.rectangle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  opacity: .9;
+  z-index: 1;
+  animation-iteration-count: infinite;
 }
 
 .circle {
   background-color: #E4B363;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  z-index: 1;
-  left: 60%;
-  top: 470px;
-  opacity: .9;
 
-  animation-name: circle;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation: circle 5s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .square {
   background-color: #EF6161;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  z-index: 3;
-  left: 6%;
-  top: 240px;
-  transform: rotate(30deg);
-  opacity: .9;
 
-  animation-name: square;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation: square 3s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .triangle {
-  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 0px solid #6198EF;
   width: 0;
-  border-left: 150px solid #6198EF;
-  border-right: 150px solid transparent;
-  border-top: 150px solid transparent;
-  border-bottom: 150px solid transparent;
-  position: absolute;
-  z-index: 4;
-  left: 45%;
-  top: 80px;
-  transform: rotate(-10deg);
-  opacity: .9;
+  height: 0;
 
-  animation-name: triangle;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: triangle 3s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .rectangle {
   background-color: #EFC761;
-  width: 400px;
-  height: 50px;
-  position: absolute;
-  z-index: 4;
-  left: 15%;
-  top: 600px;
-  transform: rotate(-20deg);
-  opacity: .9;
 
-  animation-name: rectangle;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation: rectangle 4s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* shape animations */
+
+@keyframes square {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(-5deg);
+  }
 }
 
 @keyframes circle {
   50% {
-    top: 480px;
-  }
-}
-
-@keyframes square {
-  50% {
-    top: 250px;
+    transform: scale(1.05, 1.05)
   }
 }
 
 @keyframes triangle {
+  0% {
+    transform: rotate(-15deg);
+  }
+
   50% {
-    top: 90px;
+    transform: translateY(10px) rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(-15deg);
   }
 }
 
 @keyframes rectangle {
+  0% {
+    transform: rotate(10deg);
+  }
+
   50% {
-    top: 610px;
-  }
-}
-
-/* media queries */
-@media (max-width: 480px) {
-  .triangle {
-    left: -10%;
+    transform: translateX(10px) rotate(10deg);
   }
 
-  .circle {
-    left: 40%;
-  }
-
-  .rectangle {
-    left: -30%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .triangle {
-    left: -10%;
+  100% {
+    transform: rotate(10deg);
   }
 }

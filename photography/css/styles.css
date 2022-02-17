@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #EF6161;
+  background-color: white;
   padding-top: 50px;
 }
 
@@ -25,7 +25,8 @@ nav {
 nav a {
   font-size: 25px;
   text-decoration: none;
-  color: #fafafa;
+  /* color: #fafafa; */
+  color: #444;
   padding: 10px 15px;
   background-color: rgba(0,0,0,.1);
 }
@@ -50,31 +51,8 @@ h1 {
   opacity: 0.9;
 }
 
-/* portrait */
-
-.img {
-  width: 300px;
-  margin: 0 auto 20px;
-  position: relative;
-  z-index: 5;
-}
-
-.img img {
-  width: 100%;
-}
-
-/* info */
-
-.bio {
-  position: relative;
-  z-index: 6;
-  color: #111;
-  /* color: white; */
-  padding: 0 30px;
+p {
   text-align: center;
-  font-size: 30px;
-  font-family: 'Playfair Display', serif;
-  margin: 0 auto 30px;
 }
 
 /* shapes */
@@ -101,16 +79,10 @@ h1 {
 .circle {
   background-color: #E4B363;
   border-radius: 50%;
-
-  animation: circle 5s infinite;
-  animation-timing-function: ease-in-out;
 }
 
 .square {
   background-color: #6198EF;
-
-  animation: square 3s infinite;
-  animation-timing-function: ease-in-out;
 }
 
 .triangle {
@@ -119,66 +91,10 @@ h1 {
   border-top: 0px solid #5669AE;
   width: 0;
   height: 0;
-
-  animation: triangle 3s infinite;
-  animation-timing-function: ease-in-out;
 }
 
 .rectangle {
   background-color: #EFC761;
-
-  animation: rectangle 4s infinite;
-  animation-timing-function: ease-in-out;
-}
-
-/* shape animations */
-
-@keyframes square {
-  0% {
-    transform: rotate(-5deg);
-  }
-
-  50% {
-    transform: rotate(5deg);
-  }
-
-  100% {
-    transform: rotate(-5deg);
-  }
-}
-
-@keyframes circle {
-  50% {
-    transform: scale(1.05, 1.05)
-  }
-}
-
-@keyframes triangle {
-  0% {
-    transform: rotate(-15deg);
-  }
-
-  50% {
-    transform: translateY(10px) rotate(-15deg);
-  }
-
-  100% {
-    transform: rotate(-15deg);
-  }
-}
-
-@keyframes rectangle {
-  0% {
-    transform: rotate(10deg);
-  }
-
-  50% {
-    transform: translateX(10px) rotate(10deg);
-  }
-
-  100% {
-    transform: rotate(10deg);
-  }
 }
 
 /* media queries */
@@ -191,7 +107,4 @@ h1 {
 }
 
 @media (min-width: 769px) {
-  .bio {
-    width: 800px;
-  }
 }
