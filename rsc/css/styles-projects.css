@@ -68,6 +68,7 @@ h1 {
 .project-item img {
   width: 100%;
   opacity: .95;
+  margin-bottom: 20px;
 }
 
 .project-item-info {
